@@ -1,81 +1,61 @@
--<!DOCTYPE html>
-HTM lang = " es ">
-Cabecera>
-    meta carbone = " UTF-8 ">
-    meta nombre = " viewport " content = " width=device-width, initial-scale=1.0 ">
-    El título>Mi Blog-/ título>
-    " href="https://cdn.jsdelivr.net/npm/tailwindcss-2.2.19/dist/tailwindd.css " rel = " hoja de estilo ">
-- / cabeza>
-- clase corporal = " bg-griy-100 font-sans">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página Sencilla con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    Navbar...
-    Clase de navegación class= " bg-blanca sombra-lg ">
-        de div class = " max-w-6xl m-auto px-4 ">
-            <Div class = " flex justifica- entre ">
-                <Div class = " flex space-x-7 ">
-                    A href = " clase "class= " flex elemento-centro py-4 px-2 ">
-                        Clase classde    fuente-semibold text-griy-500 text-lg >Mi Blog-/ span>
-                    A>
-                -/ div>
-                <Div class = " escondido md:flex items-center space-x-1 ">
-                    A <ahref = " "clase " = " py-4 px-2 texto-griy-500 fuente-semibold hover:text-green-500 de transición-dura-300 ">InicioA>
-                    A <ahref = " "clase " = " py-4 px-2 texto-griy-500 fuente-semibold hover:text-green-500 de transición-dura-300 ">BlogA>
-                    A <ahref = " "clase " = " py-4 px-2 texto-griy-500 fuente-semibold hover:text-green-500 de transición-dura-300 ">Acerca deA>
-                    A <ahref = " "clase " = " py-4 px-2 texto-griy-500 fuente-semibold hover:text-green-500 de transición-dura-300 ">ContactoA>
-                -/ div>
-            -/ div>
-        -/ div>
-    -/ nav>
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Una página sencilla con Bootstrap</p>
+    </header>
 
-    - - Dirúo...
-    Clase de  class= " bg-verde-500 texto-blanco py-20 ">
-        <Div class = " max-w-6xl mx-auto text-centr ">
-            Clase h1 class= " text-5xl font-bold ">Bienvenido a Mi Blog-/ h1>
-            Clase de p class= " mt-4 text-xl ">Un lugar para compartir ideas y conocimientos.-/ p>
-        -/ div>
-    - / cabecera>
+    <section id="nosotros" class="container my-5">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una empresa dedicada a ofrecer soluciones innovadoras para nuestros clientes.</p>
+    </section>
 
-    - Contenido principal --
-    Clase principal class= " max-w-6xl mx-auto mt-10 px-4 ">
-        <Div class = " grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-            Blog Puesto 1.
-            <Div class = " bg-white redondeado-lg sombra-lg-esborrado-escondido ">
-                " src="https://via.placeholder.com/400x200 " alt = " Post 1 " class = " w-full h-48 object-cover ">
-                <Div class = " p-6 ">
-                    Clase h2 class= " text-2xl font-bold mb-2 ">Título del Post 1-/ h2>
-                    - clase p = =" texto-griy-700 ">Descripción breve del post. Aquí puedes escribir un resumen de lo que trata el artículo.-/ p>
-                    A <ahref = " clase "class= " mt-4 inline-block bg-green-500 text-white px-4 py-2 redondeado hover:bg-veren-600 duración de transición-300 Leer másA>
-                -/ div>
-            -/ div>
+    <section id="contacto" class="container my-5">
+        <h2>Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mensaje</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
 
-            Blog Post 2 --
-            <Div class = " bg-white redondeado-lg sombra-lg-esborrado-escondido ">
-                " src="https://via.placeholder.com/400x200 " alt = " Post 2 " clase de " " w-full h-48 object-cover >
-                <Div class = " p-6 ">
-                    Clase h2 class= " text-2xl font-bold mb-2 ">Título del Post 2-/ h2>
-                    - clase p = =" texto-griy-700 ">Descripción breve del post. Aquí puedes escribir un resumen de lo que trata el artículo.-/ p>
-                    A <ahref = " clase "class= " mt-4 inline-block bg-green-500 text-white px-4 py-2 redondeado hover:bg-veren-600 duración de transición-300 Leer másA>
-                -/ div>
-            -/ div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
 
-            Blog Post 3 --
-            <Div class = " bg-white redondeado-lg sombra-lg-esborrado-escondido ">
-                " src="https://via.placeholder.com/400x200 " alt = " Post 3 " class = " " w-full h-48 object-cover ">
-                <Div class = " p-6 ">
-                    Clase h2 class= " text-2xl font-bold mb-2 ">Título del Post 3-/ h2>
-                    - clase p = =" texto-griy-700 ">Descripción breve del post. Aquí puedes escribir un resumen de lo que trata el artículo.-/ p>
-                    A <ahref = " clase "class= " mt-4 inline-block bg-green-500 text-white px-4 py-2 redondeado hover:bg-veren-600 duración de transición-300 Leer másA>
-                -/ div>
-            -/ div>
-        -/ div>
-    -/ principal>
-
-    Footer...
-    Clase classde pies   bg-blanco sombra-lg mt-20 >
-        de la clase div = " max-w-6xl mx-auto py-6 px-4 ">
-            Clase p class= " text-center text-griy-500 ">2023 Mi Blog. Todos los derechos reservados.-/ p>
-        -/ div>
-    -/ pierista>
-
--/ cuerpo>
--/ html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
