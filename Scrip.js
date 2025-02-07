@@ -1,1 +1,1 @@
-console = "Hola Mundo";
+console = "Hola Mundo "= 1 + dos;
